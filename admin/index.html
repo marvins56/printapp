@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>uprint :: admin</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" >
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    	<link rel="stylesheet" href="css/grids.css">
+        	<link rel="stylesheet" href="css/style-table.css">
+  </head>
+  <body>
+
+		<div class="wrapper d-flex align-items-stretch">
+      			<nav id="sidebar">
+      				<div class="p-4 pt-5">
+      		  		<a href="#" class="img logo rounded-circle mb-5" style="background-image: url(images/logo.jpg);"></a>
+      	        <ul class="list-unstyled components mb-5">
+      	          <li class="active">
+      	            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">NAVIGATIONS</a>
+      	            <ul class="collapse list-unstyled" id="homeSubmenu">
+                      <li>
+                          <a href="#"> <i class="fas fa-bells"></i>  orders</a>
+                      </li>
+                      <li>
+                          <a href="#"> <i class="fas fa-list-alt"></i>  completed</a>
+                      </li>
+                      <li>
+                          <a href="#"> <i class="fas fa-user-edit"></i>  pending</a>
+                      </li>
+                      <li>
+                          <a href="#">  <i class="fas fa-users"></i> users</a>
+                      </li>
+                      <li>
+                          <a href="#">   <i class="fas fa-comments-dollar"></i>  paid</a>
+                      </li>
+
+      	            </ul>
+      	          </li>
+
+      	        </ul>
+      	        <div class="footer">
+      	      <span>  <a href="#">	<i class="fas fa-sign-out-alt" style="font-size:30px; padding:20px;" title="logout"></i></a></span>
+              <span>  <a href="#"><i class="fas fa-cogs"style="font-size:30px; padding:20px;" title="settings"></i></a></span>
+      	        </div>
+      	      </div>
+          	</nav>
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5">
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                      <i class="fa fa-bars"></i>
+                      <span class="sr-only">Toggle Menu</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="nav navbar-nav ml-auto">
+
+                        <li class="nav-item active ">
+          	               <a href="#" > <img src="images/logo.jpg"  style="width:60px; height:60px; border-radius:50%;" alt=""></a>
+                            <span>KAUTA MARVIN</span>
+                      </li>
+
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+
+      <div class="subcontainer">
+
+            <div class="col1">
+              <div class="cont">
+                   <i class="fas fa-sack-dollar fa-5x" ></i>
+                   <div class="cont-2">
+                     <em>  TOTAL SALES</em>
+                   </div>
+              </div>
+            </div>
+
+            <div class="col2">
+              <div class="cont">
+                <i class="fas fa-coins fa-5x" ></i>
+                <div class="cont-2">
+                      <em>COMMISION</em>
+                </div>
+              </div>
+            </div>
+
+            <div class="col3">
+              <div class="cont">
+                 <a href="#"><i class="fas fa-chart-line fa-7x"></i> </a>
+                <div class="cont-2">
+                    <em>ACCOUNTABILITY</em>
+                </div>
+              </div>
+            </div>
+
+            <div class="col4">
+            <div class="cont">
+              <a href="#"> <i class="fas fa-database fa-7x"></i></a>
+              <div class="cont-2">
+                <em>RESET DASHBOARD </em>
+              </div>
+            </div>
+            </div>
+            <div class="col5">
+              <p class="heading-section">DYNAMIC CHART AREA</p>
+            </div>
+      </div>
+
+</div>
+      </div>
+      <h2 class="heading-section" style="text-align:center;"> LIST OF ORDERS </h2>
+      <section class="ftco-section">
+	<div class="row justify-content-center">
+        <div class="container">
+    				<div class="col-md-6 text-center mb-5">
+    					<h2 class="heading-section" ></h2>
+    				</div>
+    			</div>
+    			<div class="row">
+    				<div class="col-md-12">
+    					<div class="table-wrap">
+    						<table class="table table-responsive-xl">
+    						  <thead>
+    						    <tr>
+    						    	<th>&nbsp;</th>
+    						    	<th>Email</th>
+    						      <th>Username</th>
+    						      <th>Status</th>
+                      <th>Documents</th>
+                      <th>Action</th>
+    						      <th>&nbsp;</th>
+    						    </tr>
+    						  </thead>
+    						  <tbody>
+    						    <tr class="alert" role="alert">
+    						    	<td>
+    						    		<label class="checkbox-wrap checkbox-primary">
+    										  <input type="checkbox" checked>
+    										  <span class="checkmark"></span>
+    										</label>
+    						    	</td>
+    						      <td class="d-flex align-items-center">
+    						      	<div class="img" style="background-image: url(images/logo.jpg);"></div>
+    						      	<div class="pl-3 email">
+    						      		<span>markotto@email.com</span>
+    						      		<span>Added: 01/03/2020</span>
+    						      	</div>
+    						      </td>
+    						      <td>Markotto89</td>
+    						      <td class="status"><span class="active">Active</span></td>
+                        <td>  <a href="#"> <i class="fas fa-file-word" style="font-size:40px;"></i></a>  </td>
+                          <td>
+
+                            <div class="bs-example">
+                                <!-- Button HTML (to Trigger Modal) -->
+                                <button type="button" class="btn btn-msg btn-lg btn-primary">MSG</button>
+
+                                <!-- Modal HTML -->
+                                <div id="myModal" class="modal fade" tabindex="-1">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">SEND CUSTOMIZED MESSAGE</h5>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="customise_msg">
+                                                  <form class="form_msg" method="post">
+                                                  <div class="col--1">
+
+                                                      <h4>CUSTOMIZED MESSAGE</h4>
+                                                    <textarea name="msg" rows="8" cols="30" placeholder="type Here..."></textarea><br>
+                                                    <label for="delivery-guy">DELIVERY DETAILS</label><br>
+                                                    <input type="text" name="delivery-guy" value="" placeholder="delivery by..">
+                                                    <label for="tel">TEL:</label>
+                                                          <input type="text" name="tel" value="">
+                                                  </div>
+
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                                <button type="button" class="btn btn-primary">SEND</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            </td>
+    						      <td>
+    						      	<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    				            	<span aria-hidden="true"><i class="fa fa-close"></i></span>
+    				          	</button>
+    				        	</td>
+    						    </tr>
+                    <tr class="alert" role="alert">
+                      <td>
+                        <label class="checkbox-wrap checkbox-primary">
+                          <input type="checkbox" checked>
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td class="d-flex align-items-center">
+                        <div class="img" style="background-image: url(images/logo.jpg);"></div>
+                        <div class="pl-3 email">
+                          <span>markotto@email.com</span>
+                          <span>Added: 01/03/2020</span>
+                        </div>
+                      </td>
+                      <td>Markotto89</td>
+                      <td class="status"><span class="active">Active</span></td>
+                        <td>  <a href="#"> <i class="fas fa-file-word" style="font-size:40px;"></i></a>  </td>
+                          <td>
+
+                            <div class="bs-example">
+                                <!-- Button HTML (to Trigger Modal) -->
+                                <button type="button" class="btn btn-msg btn-lg btn-primary">MSG</button>
+
+                                <!-- Modal HTML -->
+                                <div id="myModal" class="modal fade" tabindex="-1">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">SEND CUSTOMIZED MESSAGE</h5>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="customise_msg">
+                                                  <form class="form_msg" method="post">
+                                                  <div class="col--1">
+
+                                                      <h4>CUSTOMIZED MESSAGE</h4>
+                                                    <textarea name="msg" rows="8" cols="30" placeholder="type Here..."></textarea><br>
+                                                    <label for="delivery-guy">DELIVERY DETAILS</label><br>
+                                                    <input type="text" name="delivery-guy" value="" placeholder="delivery by..">
+                                                    <label for="tel">TEL:</label>
+                                                          <input type="text" name="tel" value="">
+                                                  </div>
+
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                                <button type="button" class="btn btn-primary">SEND</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            </td>
+                      <td>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                          <span aria-hidden="true"><i class="fa fa-close"></i></span>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="alert" role="alert">
+                      <td>
+                        <label class="checkbox-wrap checkbox-primary">
+                          <input type="checkbox" checked>
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td class="d-flex align-items-center">
+                        <div class="img" style="background-image: url(images/logo.jpg);"></div>
+                        <div class="pl-3 email">
+                          <span>markotto@email.com</span>
+                          <span>Added: 01/03/2020</span>
+                        </div>
+                      </td>
+                      <td>Markotto89</td>
+                      <td class="status"><span class="active">Active</span></td>
+                        <td>  <a href="#"> <i class="fas fa-file-word" style="font-size:40px;"></i></a>  </td>
+                          <td>
+
+                            <div class="bs-example">
+                                <!-- Button HTML (to Trigger Modal) -->
+                                <button type="button" class="btn btn-msg btn-lg btn-primary">MSG</button>
+
+                                <!-- Modal HTML -->
+                                <div id="myModal" class="modal fade" tabindex="-1">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">SEND CUSTOMIZED MESSAGE</h5>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="customise_msg">
+                                                  <form class="form_msg" method="post">
+                                                  <div class="col--1">
+
+                                                      <h4>CUSTOMIZED MESSAGE</h4>
+                                                    <textarea name="msg" rows="8" cols="30" placeholder="type here...."></textarea><br>
+                                                    <label for="delivery-guy">DELIVERY DETAILS</label><br>
+                                                    <input type="text" name="delivery-guy" value="" placeholder="delivery by..">
+                                                    <label for="tel">TEL:</label>
+                                                          <input type="text" name="tel" value="">
+                                                  </div>
+
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                                <button type="button" class="btn btn-primary">SEND</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            </td>
+                      <td>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                          <span aria-hidden="true"><i class="fa fa-close"></i></span>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="alert" role="alert">
+                      <td>
+                        <label class="checkbox-wrap checkbox-primary">
+                          <input type="checkbox" checked>
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td class="d-flex align-items-center">
+                        <div class="img" style="background-image: url(images/logo.jpg);"></div>
+                        <div class="pl-3 email">
+                          <span>markotto@email.com</span>
+                          <span>Added: 01/03/2020</span>
+                        </div>
+                      </td>
+                      <td>Markotto89</td>
+                      <td class="status"><span class="active">Active</span></td>
+                        <td>  <a href="#"> <i class="fas fa-file-word" style="font-size:40px;"></i></a>  </td>
+                          <td>
+
+                            <div class="bs-example">
+                                <!-- Button HTML (to Trigger Modal) -->
+                                <button type="button" class="btn btn-msg btn-lg btn-primary">MSG</button>
+
+                                <!-- Modal HTML -->
+                                <div id="myModal" class="modal fade" tabindex="-1">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">SEND CUSTOMIZED MESSAGE</h5>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="customise_msg">
+                                                  <form class="form_msg" method="post">
+                                                  <div class="col--1">
+
+                                                      <h4>CUSTOMIZED MESSAGE</h4>
+                                                    <textarea name="msg" rows="8" cols="30" placeholder="type Here..."></textarea><br>
+                                                    <label for="delivery-guy">DELIVERY DETAILS</label><br>
+                                                    <input type="text" name="delivery-guy" value="" placeholder="delivery by..">
+                                                    <label for="tel">TEL:</label>
+                                                          <input type="text" name="tel" value="">
+                                                  </div>
+
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                                <button type="button" class="btn btn-primary">SEND</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            </td>
+                      <td>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                          <span aria-hidden="true"><i class="fa fa-close"></i></span>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="alert" role="alert">
+                      <td>
+                        <label class="checkbox-wrap checkbox-primary">
+                          <input type="checkbox" checked>
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td class="d-flex align-items-center">
+                        <div class="img" style="background-image: url(images/logo.jpg);"></div>
+                        <div class="pl-3 email">
+                          <span>markotto@email.com</span>
+                          <span>Added: 01/03/2020</span>
+                        </div>
+                      </td>
+                      <td>Markotto89</td>
+                      <td class="status"><span class="active">Active</span></td>
+                        <td>  <a href="#"> <i class="fas fa-file-word" style="font-size:40px;"></i></a>  </td>
+                          <td>
+
+                            <div class="bs-example">
+                                <!-- Button HTML (to Trigger Modal) -->
+                                <button type="button" class="btn btn-msg btn-lg btn-primary">MSG</button>
+
+                                <!-- Modal HTML -->
+                                <div id="myModal" class="modal fade" tabindex="-1">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">SEND CUSTOMIZED MESSAGE</h5>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="customise_msg">
+                                                  <form class="form_msg" method="post">
+                                                  <div class="col--1">
+
+                                                      <h4>CUSTOMIZED MESSAGE</h4>
+                                                    <textarea name="msg" rows="8" cols="30" placeholder="type Here..."></textarea><br>
+                                                    <label for="delivery-guy">DELIVERY DETAILS</label><br>
+                                                    <input type="text" name="delivery-guy" value="" placeholder="delivery by..">
+                                                    <label for="tel">TEL:</label>
+                                                          <input type="text" name="tel" value="">
+                                                  </div>
+
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                                <button type="button" class="btn btn-primary">SEND</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            </td>
+                      <td>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                          <span aria-hidden="true"><i class="fa fa-close"></i></span>
+                        </button>
+                      </td>
+                    </tr>
+    						  </tbody>
+    						</table>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+
+      <script>
+          $(document).ready(function(){
+              $(".btn-msg").click(function(){
+                  $("#myModal").modal('show');
+              });
+          });
+      </script>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

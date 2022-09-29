@@ -1,0 +1,160 @@
+.header_container {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(200px, 1fr));
+  grid-gap: 5px;
+  border: 1px solid lightgrey;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 80%;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.cont1 {
+  width: 80%;
+  border-radius: 50%;
+  margin: 5px;
+}
+.cont1 img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid white;
+  margin: 5px;
+}
+.cont1 img:hover {
+  transform: scale(1.1);
+}
+.cont1 img {
+  transition: all 0.4s ease-in-out;
+}
+.profile {
+  background: #333;
+  color: #fff;
+  outline: none;
+  border: none;
+  padding: 7px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 17px;
+}
+.profiling-details {
+  position: relative;
+  top: 10px;
+}
+.message {
+  border-radius: 50%;
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  border-right: 0;
+  font-size: 50px;
+}
+svg {
+  height: 40px;
+  z-index: 0;
+  transition: 0.8s;
+  color: white;
+}
+svg:hover {
+  transform: scale(1.1);
+}
+.wrapper {
+  width: 100%;
+}
+.wrapper .button {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover {
+  width: 150px;
+}
+.wrapper .button .icon {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) .icon a {
+  color: #4267b2;
+}
+.wrapper .button:nth-child(2) .icon a {
+  color: #1da1f2;
+}
+.wrapper .button:nth-child(3) .icon a {
+  color: #e1306c;
+}
+.wrapper .button:nth-child(4) .icon a {
+  color: #1da1f2;
+}
+.wrapper .button:nth-child(5) .icon a {
+  color: #1da1f2;
+}
+.wrapper .button:nth-child(6) .icon a {
+  color: #4267b2;
+}
+.wrapper .button:nth-child(7) .icon a {
+  color: #ff0000;
+}
+
+.wrapper .button:nth-child(1):hover .icon {
+  background: #4267b2;
+}
+.wrapper .button:nth-child(2):hover .icon {
+  background: #1da1f2;
+}
+.wrapper .button:nth-child(3):hover .icon {
+  background: #e1306c;
+}
+.wrapper .button:nth-child(4):hover .icon {
+  background: #e1306c;
+}
+.wrapper .button:nth-child(5):hover .icon {
+  background: #1da1f2;
+}
+.wrapper .button:nth-child(6):hover .icon {
+  background: #1da1f2;
+}
+.wrapper .button .icon i {
+  font-size: 15px;
+  line-height: 40px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i {
+  color: #fff;
+}
+.wrapper .button span {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 40px;
+  margin-left: 3px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) span {
+  color: #4267b2;
+}
+.wrapper .button:nth-child(2) span {
+  color: #1da1f2;
+}
+.wrapper .button:nth-child(3) span {
+  color: #e1306c;
+}
+.wrapper .button:nth-child(4) span {
+  color: #ff0000;
+}
